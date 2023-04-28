@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1121"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tex1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Google"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border_sec1"
+        android:hint=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+       android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_marginBottom="30dp"
+        >
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+           android:background="@drawable/wave"
+            android:id="@+id/emoji"
+            android:layout_marginStart="20dp"
+            />
+
+        <EditText
+            android:background="@drawable/border_sec"
+            android:id="@+id/Write1"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="inherit"
+            android:hint="  Message..... "
+            android:textSize="24sp"
+
+            android:textColor="@color/black"
+            />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/checkmark"
+            android:id="@+id/sent"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
